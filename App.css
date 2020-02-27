@@ -1,0 +1,33 @@
+.add_todo{
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+.div_todo{
+    width: 400px;
+    margin: auto;
+}
+span{
+    margin: 30px;
+}
+.deletebutton{
+    float: right
+}
+.strikethrough:checked + span{
+    text-decoration:line-through
+  }
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+.divFooter{
+    background-color: cornsilk;
+    border: 1px solid black;
+}
+.clear{ 
+    float: right;
+}
