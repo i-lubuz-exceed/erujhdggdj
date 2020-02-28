@@ -1,33 +1,61 @@
 .add_todo{
-    width: 400px;
-    margin: auto;
-    display: block;
-}
+    width: 80%;
+    display: inline-block;
+    border: none;
+  }
 .div_todo{
-    width: 400px;
+    width: 500px;
     margin: auto;
-}
+  }
 span{
     margin: 30px;
-}
-.deletebutton{
-    float: right
-}
+  }
+.deleteButton{
+    float: right;
+    display: none;
+  }
 .strikethrough:checked + span{
     text-decoration:line-through
   }
-  button {
+button {
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
-}
+  }
 .divFooter{
     background-color: cornsilk;
     border: 1px solid black;
-}
+  }
 .clear{ 
     float: right;
+  }
+.active{
+    background-color: aquamarine;
+    border: 1px solid blue;
+  }
+.add_allbutton{
+    margin: 20px;
+}
+.clearVision:hover  .deleteButton{
+     display:block; 
+     
+}
+.clearVision{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+    border-collapse: collapse;
+    display: flex;
+}
+.clearOnVision {
+    display: none;
+}
+.todos{
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    color: gold;
 }
