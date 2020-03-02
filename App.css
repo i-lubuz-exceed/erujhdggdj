@@ -1,61 +1,99 @@
+body{
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #f5f5f5;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+}
 .add_todo{
-    width: 80%;
-    display: inline-block;
-    border: none;
-  }
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
 .div_todo{
-    width: 500px;
-    margin: auto;
-  }
-span{
-    margin: 30px;
-  }
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+}
+.todo-body{
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+.todo-input{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.status-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.status-buttons button{
+  outline: none;
+  padding: 3px 7px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.status-buttons .active{
+  border-color: rgba(175, 47, 47, 0.2);
+}
 .deleteButton{
-    float: right;
-    display: none;
-  }
-.strikethrough:checked + span{
-    text-decoration:line-through
-  }
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-  }
+  display: none;
+}
+.checkbox:checked + div{
+  text-decoration:line-through
+}
+.checkbox{
+  margin: 10px;
+}
+button{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 .divFooter{
-    background-color: cornsilk;
-    border: 1px solid black;
-  }
-.clear{ 
-    float: right;
-  }
-.active{
-    background-color: aquamarine;
-    border: 1px solid blue;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
 .add_allbutton{
-    margin: 20px;
+  margin: 20px;
 }
-.clearVision:hover  .deleteButton{
-     display:block; 
-     
+.todo-item:hover  .deleteButton{
+   display:block; 
 }
-.clearVision{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 0;
-    border-collapse: collapse;
-    display: flex;
+.todo-item{
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  padding: 10px;
+  margin: 0;
+  border-collapse: collapse;
+  display: flex;
 }
-.clearOnVision {
-    display: none;
+.clearOnVision{
+  opacity: 0;
 }
 .todos{
-    text-align: center;
-    font-size: 70px;
-    margin: 0;
-    color: gold;
+  text-align: center;
+  font-size: 100px;
+  margin: 0;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  padding: 12px;
 }
